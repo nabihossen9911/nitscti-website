@@ -1,0 +1,192 @@
+/*=========================================
+  BUTTONS
+=========================================*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+
+.btn-primary {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--primary-dark));
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(14, 165, 233, .35);
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 45px rgba(14, 165, 233, .45);
+}
+
+.btn-outline {
+    background: #fff;
+    border: 2px solid rgba(14, 165, 233, .18);
+    color: var(--dark);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .08);
+    padding: 16px 34px;
+    border-radius: 12px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    transition: .35s;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-3px);
+}
+
+
+/*=========================================
+  CARD
+=========================================*/
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+}
+
+
+/*=========================================
+  IMAGE
+=========================================*/
+
+.img-fluid {
+    width: 100%;
+    display: block;
+}
+
+
+/*=========================================
+  BADGE
+=========================================*/
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 50px;
+    background: #eef7ff;
+    color: var(--primary-color);
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+
+/*=========================================
+  DIVIDER
+=========================================*/
+
+.divider {
+    width: 70px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50px;
+    margin: 20px auto;
+}
+
+
+/*=========================================
+  NAVIGATION
+=========================================*/
+
+.nav-list a {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--heading-color);
+    transition: var(--transition);
+}
+
+.nav-list a:hover {
+    color: var(--primary-color);
+}
+
+
+/*=========================================
+  ACTIVE UNDERLINE
+=========================================*/
+
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: var(--transition);
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+
+/*=========================================
+  LOGO
+=========================================*/
+
+.logo img {
+    display: block;
+    height: 60px;
+}
+
+
+/*=========================================
+  CTA BUTTON
+=========================================*/
+
+.header .btn {
+    padding: 12px 28px;
+}
+
+
+/*=========================================
+  ACTIVE NAVIGATION
+=========================================*/
+
+.nav-list a.active {
+    color: var(--primary-color);
+}
+
+.nav-list a.active::after {
+    width: 100%;
+}
+
+
+/*=========================================
+  BUTTON SHINE EFFECT
+=========================================*/
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, .45),
+            transparent);
+    transition: left .7s ease;
+}
+
+.btn-primary:hover::before {
+    left: 140%;
+}
