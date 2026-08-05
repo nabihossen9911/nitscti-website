@@ -2,9 +2,9 @@
   CONTAINER
 =========================================*/
 
-.container{
-    width:min(90%,var(--container-width));
-    margin-inline:auto;
+.container {
+  width: min(90%, var(--container-width));
+  margin-inline: auto;
 }
 
 
@@ -12,13 +12,13 @@
   HEADER
 =========================================*/
 
-.header{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    background:transparent;
-    z-index:1000;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
 }
 
 
@@ -26,11 +26,12 @@
   NAVBAR
 =========================================*/
 
-.header .container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    min-height:90px;
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 90px;
 }
 
 
@@ -38,14 +39,14 @@
   LOGO
 =========================================*/
 
-.logo{
-    display:flex;
-    align-items:center;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo img{
-    height:60px;
-    width:auto;
+.logo img {
+  height: 60px;
+  width: auto;
 }
 
 
@@ -53,9 +54,9 @@
   NAVIGATION
 =========================================*/
 
-.navbar{
-    display:flex;
-    align-items:center;
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
 
@@ -63,10 +64,10 @@
   MENU
 =========================================*/
 
-.nav-list{
-    display:flex;
-    align-items:center;
-    gap:40px;
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 
@@ -74,6 +75,20 @@
   MENU BUTTON
 =========================================*/
 
-.menu-toggle{
-    display:none;
+.menu-toggle {
+  display: none;
+}
+
+/*=========================================
+  DARK HEADER
+=========================================*/
+body.dark-mode .header{
+    background:transparent;
+}
+body.dark-mode .nav-list a{
+    color:var(--heading-color);
+}
+
+body.dark-mode .nav-list a:hover{
+    color:var(--primary-color);
 }

@@ -1,14 +1,13 @@
 /*=========================================
   CSS RESET
 =========================================*/
-
 *,
 *::before,
-*::after{
+*::after {
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 }
 
@@ -16,61 +15,64 @@
 /*=========================================
   ROOT VARIABLES
 =========================================*/
+:root {
+  /* Brand */
+  --primary-color: #199EDC;
+  --primary-dark: #1487BC;
+  --heading-color: #231F20;
+  --text-color: #555555;
+  --white: #FFFFFF;
+  --bg-color:#ffffff;
+  --surface-color:#ffffff;
+  --heading-color:#231F20;
+  --text-color:#555555;
+  --gray:#777777;
+  --border-color:#e5e7eb;
+  --shadow:0 20px 45px rgba(15,23,42,.08);
+  --transition:.35s ease;
 
-:root{
+  /* Layout */
+  --container-width: 1200px;
 
-    /* Brand */
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
 
-    --primary-color:#199EDC;
-    --primary-dark:#1487BC;
+  /* Radius */
+  --radius: 12px;
+}
 
-    --heading-color:#231F20;
-    --text-color:#555555;
 
-    --white:#FFFFFF;
 
-    /* Layout */
-
-    --container-width:1200px;
-
-    /* Typography */
-
-    --font-family:"Poppins",sans-serif;
-
-    /* Radius */
-
-    --radius:12px;
-
+/*=========================================
+  DARK THEME
+=========================================*/
+body.dark-mode {
+  --bg-color: #0f172a;
+  --surface-color: #1e293b;
+  --heading-color: #f8fafc;
+  --text-color: #cbd5e1;
+  --gray: #94a3b8;
+  --border-color:rgba(255,255,255,.08);
+  --shadow:0 25px 55px rgba(0,0,0,.45);
 }
 
 
 /*=========================================
   HTML
 =========================================*/
+html {
 
-html{
-
-    scroll-behavior:smooth;
-
+  scroll-behavior: smooth;
 }
 
-
-/*=========================================
-  BODY
-=========================================*/
 
 body{
-
     font-family:var(--font-family);
-
+    background:var(--bg-color);
     color:var(--text-color);
-
-    background:var(--white);
-
-    line-height:1.7;
-
+    transition: background .35s ease, color .35s ease;
+    /* line-height: 1.7; */
 }
-
 
 /*=========================================
   HEADINGS
@@ -81,62 +83,54 @@ h2,
 h3,
 h4,
 h5,
-h6{
-
-    color:var(--heading-color);
-
-    line-height:1.2;
-
-    font-weight:700;
-
+h6 {
+  color: var(--heading-color);
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 
 /*=========================================
   LINKS
 =========================================*/
-
-a{
-
-    color:inherit;
-
-    text-decoration:none;
-
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
 /*=========================================
   LIST
 =========================================*/
-
-ul{
-
-    list-style:none;
-
+ul {
+  list-style: none;
 }
 
 
 /*=========================================
   IMAGE
 =========================================*/
-
-img{
-
-    display:block;
-
-    max-width:100%;
-
+img {
+  display: block;
+  max-width: 100%;
 }
 
 
 /*=========================================
-  SELECTION
+  TEXT SELECTION
 =========================================*/
 
 ::selection{
-
     background:var(--primary-color);
-
     color:#fff;
-
+}
+/*=========================================
+  GLOBAL THEME TRANSITION
+=========================================*/
+*{
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
