@@ -1,201 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NITS COMPUTER TRAINING INSTITUTE</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ===== BASE STYLES ===== -->
-    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/base.css" />
 
     <!-- ===== LAYOUT ===== -->
-    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/layout.css" />
 
     <!-- ===== COMPONENTS ===== -->
-    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/components.css" />
 
     <!-- ===== PAGES ===== -->
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/pages.css" />
 
     <!-- ===== RESPONSIVE ===== -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
+      <div class="container">
+        <!-- ===== LOGO ===== -->
 
-        <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="assets/images/logo/web/nitscti-logo.svg"
+            alt="NITS COMPUTER TRAINING INSTITUTE Logo"
+          />
+        </a>
 
-            <!-- ===== LOGO ===== -->
+        <!-- ===== NAVIGATION ===== -->
 
-            <a href="#" class="logo">
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-                <img src="assets/images/logo/web/nitscti-logo.svg" alt="NITS COMPUTER TRAINING INSTITUTE Logo">
+        <!-- ===== Dark/Light Mode ===== -->
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle Theme"
+        >
+          <!-- Sun Icon -->
 
-            </a>
+          <svg
+            class="sun-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
 
-            <!-- ===== NAVIGATION ===== -->
+            <path d="M12 1v2"></path>
+            <path d="M12 21v2"></path>
+            <path d="M4.22 4.22l1.42 1.42"></path>
+            <path d="M18.36 18.36l1.42 1.42"></path>
+            <path d="M1 12h2"></path>
+            <path d="M21 12h2"></path>
+            <path d="M4.22 19.78l1.42-1.42"></path>
+            <path d="M18.36 5.64l1.42-1.42"></path>
+          </svg>
 
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+          <!-- Moon Icon -->
 
-            <!-- ===== Dark/Light Mode ===== -->
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg
+            class="moon-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3"></path>
+          </svg>
+        </button>
 
-                <!-- Sun Icon -->
+        <!-- ===== CTA ===== -->
+        <a href="#contact" class="btn btn-primary"> Enroll Now </a>
 
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <!-- ===== MOBILE MENU ===== -->
 
-                    <circle cx="12" cy="12" r="5"></circle>
-
-                    <path d="M12 1v2"></path>
-                    <path d="M12 21v2"></path>
-                    <path d="M4.22 4.22l1.42 1.42"></path>
-                    <path d="M18.36 18.36l1.42 1.42"></path>
-                    <path d="M1 12h2"></path>
-                    <path d="M21 12h2"></path>
-                    <path d="M4.22 19.78l1.42-1.42"></path>
-                    <path d="M18.36 5.64l1.42-1.42"></path>
-
-                </svg>
-
-                <!-- Moon Icon -->
-
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-
-                    <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3"></path>
-
-                </svg>
-
-            </button>
-
-            <!-- ===== CTA ===== -->
-            <a href="#contact" class="btn btn-primary">
-                Enroll Now
-            </a>
-
-            <!-- ===== MOBILE MENU ===== -->
-
-            <div class="menu-toggle">
-                ☰
-            </div>
-        </div>
+        <div class="menu-toggle">☰</div>
+      </div>
     </header>
     <main>
-        <section id="hero">
-            <div class="hero-decoration"></div>
-            <div class="container hero">
-                <div class="hero-content">
-                    <span class="hero-badge">
-                        🚀 Trusted Computer Training Institute
-                    </span>
-                    <h1>
-                        Learn Future Skills.
-                        <br>
-                        Build Your Career.
-                    </h1>
-                    <p>
-                        Practical Computer Training, Freelancing,
-                        Office Applications, Graphic Design,
-                        Programming and Career Development
-                        — all under one roof.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary">
-                            Explore Courses
-                        </a>
-                        <a href="#" class="btn-outline">
-                            Watch Overview
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div>
-                            <h3>1000+</h3>
-                            <span>Students</span>
-                        </div>
-                        <div>
-                            <h3>20+</h3>
-                            <span>Courses</span>
-                        </div>
-                        <div>
-                            <h3>95%</h3>
-                            <span>Success Rate</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="assets/images/hero/hero-image.png" alt="NITS Student">
-                    <div class="floating-card">
-                        <h4>1000+</h4>
-                        <span>Students Trained</span>
-                    </div>
-
-                </div>
+      <section id="hero">
+        <div class="hero-decoration"></div>
+        <div class="container hero">
+          <div class="hero-content">
+            <span class="hero-badge">
+              🚀 Trusted Computer Training Institute
+            </span>
+            <h1>
+              Learn Future Skills.
+              <br />
+              Build Your Career.
+            </h1>
+            <p>
+              Practical Computer Training, Freelancing, Office Applications,
+              Graphic Design, Programming and Career Development — all under one
+              roof.
+            </p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary"> Explore Courses </a>
+              <a href="#" class="btn-outline"> Watch Overview </a>
             </div>
-        </section>
-
-        <section id="about">
-            <div class="container about">
-                <div class="about-image">
-                    <img src="assets/images/about/about.jpg" alt="NITS Computer Training Institute">
-                    <div class="experience-badge">
-                        <h4>4+</h4>
-                        <span>Years Teaching</span>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <span class="section-badge">
-                        About NITS
-                    </span>
-                    <h2>
-                        Learn From Industry Experience,
-                        Build a Real Career.
-                    </h2>
-                    <p>
-                        NITS Computer Training Institute provides practical,
-                        project-based IT education with a strong focus on
-                        real-world skills, freelancing, and career development.
-                    </p>
-                    <ul class="about-list">
-                        <li>✔ Project-Based Learning</li>
-                        <li>✔ Small Batch Training</li>
-                        <li>✔ Career Support</li>
-                        <li>✔ Practical Lab Sessions</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">
-                        Learn More
-                    </a>
-                </div>
+            <div class="hero-stats">
+              <div>
+                <h3>1000+</h3>
+                <span>Students</span>
+              </div>
+              <div>
+                <h3>20+</h3>
+                <span>Courses</span>
+              </div>
+              <div>
+                <h3>95%</h3>
+                <span>Success Rate</span>
+              </div>
             </div>
-        </section>
-        <section id="about"></section>
-        <section id="courses"></section>
-        <section id="features"></section>
-        <section id="gallery"></section>
-        <section id="testimonials"></section>
-        <section id="faq"></section>
-        <section id="contact"></section>
+          </div>
+          <div class="hero-image">
+            <img src="assets/images/hero/hero-image.png" alt="NITS Student" />
+            <div class="floating-card">
+              <h4>1000+</h4>
+              <span>Students Trained</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about">
+          <div class="about-image">
+            <img
+              src="assets/images/about/about.jpg"
+              alt="NITS Computer Training Institute"
+            />
+            <div class="experience-badge">
+              <h4>4+</h4>
+              <span>Years Teaching</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-badge"> About NITS </span>
+            <h2>Learn From Industry Experience, Build a Real Career.</h2>
+            <p>
+              NITS Computer Training Institute provides practical, project-based
+              IT education with a strong focus on real-world skills,
+              freelancing, and career development.
+            </p>
+            <ul class="about-list">
+              <li>✔ Project-Based Learning</li>
+              <li>✔ Small Batch Training</li>
+              <li>✔ Career Support</li>
+              <li>✔ Practical Lab Sessions</li>
+            </ul>
+            <a href="#" class="btn btn-primary"> Learn More </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge"> ✨ Why Choose NITS </span>
+
+            <h2>
+              Everything You Need
+              <br />
+              To Build Your Career
+            </h2>
+
+            <p>
+              Practical learning, career guidance and real-world skills —
+              everything in one place.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">💻</div>
+
+              <h3>Modern Computer Lab</h3>
+
+              <p>
+                Learn with modern computers, high-speed internet and a practical
+                classroom environment.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🚀</div>
+
+              <h3>Project-Based Learning</h3>
+
+              <p>
+                Every student builds real projects instead of learning only
+                theory.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">👨‍🏫</div>
+
+              <h3>Expert Instructors</h3>
+
+              <p>
+                Learn from industry professionals with real-world experience and
+                knowledge.
+              </p>
+                classroom environment.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🎯</div>
+
+              <h3>Career Mentorship</h3>
+
+              <p>
+                Receive career guidance, interview preparation and freelancing direction.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📜</div>
+
+              <h3>Certificate Support</h3>
+
+              <p>
+                Get institute certification after successful course completion.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🤝</div>
+
+              <h3>Lifetime Support</h3>
+
+              <p>
+                Get ongoing support and resources even after completing the course.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses"></section>
+      <section id="features"></section>
+      <section id="gallery"></section>
+      <section id="testimonials"></section>
+      <section id="faq"></section>
+      <section id="contact"></section>
     </main>
     <footer></footer>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
