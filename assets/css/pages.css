@@ -11,6 +11,8 @@
   overflow: hidden;
   isolation: isolate;
   background-color: var(--bg-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .hero {

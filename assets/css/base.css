@@ -4,32 +4,29 @@
 *,
 *::before,
 *::after {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-
 
 /*=========================================
   ROOT VARIABLES
 =========================================*/
 :root {
   /* Brand */
-  --primary-color: #199EDC;
-  --primary-dark: #1487BC;
-  --heading-color: #231F20;
+  --primary-color: #199edc;
+  --primary-dark: #1487bc;
+  --heading-color: #231f20;
   --text-color: #555555;
-  --white: #FFFFFF;
-  --bg-color:#ffffff;
-  --surface-color:#ffffff;
-  --heading-color:#231F20;
-  --text-color:#555555;
-  --gray:#777777;
-  --border-color:#e5e7eb;
-  --shadow:0 20px 45px rgba(15,23,42,.08);
-  --transition:.35s ease;
+  --white: #ffffff;
+  --bg-color: #ffffff;
+  --surface-color: #ffffff;
+  --heading-color: #231f20;
+  --text-color: #555555;
+  --gray: #777777;
+  --border-color: #e5e7eb;
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  --transition: 0.35s ease;
 
   /* Layout */
   --container-width: 1200px;
@@ -41,8 +38,6 @@
   --radius: 12px;
 }
 
-
-
 /*=========================================
   DARK THEME
 =========================================*/
@@ -52,26 +47,26 @@ body.dark-mode {
   --heading-color: #f8fafc;
   --text-color: #cbd5e1;
   --gray: #94a3b8;
-  --border-color:rgba(255,255,255,.08);
-  --shadow:0 25px 55px rgba(0,0,0,.45);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow: 0 25px 55px rgba(0, 0, 0, 0.45);
 }
-
 
 /*=========================================
   HTML
 =========================================*/
 html {
-
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
-
-body{
-    font-family:var(--font-family);
-    background:var(--bg-color);
-    color:var(--text-color);
-    transition: background .35s ease, color .35s ease;
-    /* line-height: 1.7; */
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+  /* line-height: 1.7; */
 }
 
 /*=========================================
@@ -89,7 +84,6 @@ h6 {
   font-weight: 700;
 }
 
-
 /*=========================================
   LINKS
 =========================================*/
@@ -98,14 +92,12 @@ a {
   text-decoration: none;
 }
 
-
 /*=========================================
   LIST
 =========================================*/
 ul {
   list-style: none;
 }
-
 
 /*=========================================
   IMAGE
@@ -115,22 +107,21 @@ img {
   max-width: 100%;
 }
 
-
 /*=========================================
   TEXT SELECTION
 =========================================*/
 
-::selection{
-    background:var(--primary-color);
-    color:#fff;
+::selection {
+  background: var(--primary-color);
+  color: #fff;
 }
 /*=========================================
   GLOBAL THEME TRANSITION
 =========================================*/
-*{
-    transition:
-        background-color .25s ease,
-        color .25s ease,
-        border-color .25s ease,
-        box-shadow .25s ease;
+* {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }

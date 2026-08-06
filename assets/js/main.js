@@ -102,3 +102,111 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
+
+/*====================================================
+BACK TO TOP
+====================================================*/
+
+const backToTop = document.getElementById("backToTop");
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 500) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+/*====================================================
+ACTIVE NAVIGATION
+====================================================*/
+
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+
+    let currentSection = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight) {
+
+            currentSection = section.getAttribute("id");
+
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === `#${currentSection}`) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+/*====================================================
+SCROLLED HEADER
+====================================================*/
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+/*====================================================
+SMOOTH NAVIGATION
+====================================================*/
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+    });
+
+});
