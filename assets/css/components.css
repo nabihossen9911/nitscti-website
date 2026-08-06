@@ -251,3 +251,103 @@ body.dark-mode .theme-toggle {
 body.dark-mode .theme-toggle:hover {
   background: #334155;
 }
+
+/*==============================================
+TESTIMONIAL CARD
+==============================================*/
+.testimonial-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 340px;
+  transition: 0.35s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+.testimonial-rating {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  flex: 1;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #dbeafe;
+}
+
+.testimonial-user h4 {
+  margin-bottom: 4px;
+  color: var(--heading-color);
+}
+
+.testimonial-user span {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+/*==============================================
+FAQ
+==============================================*/
+.faq-item {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.faq-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--heading-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 24px 28px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question span:last-child {
+  font-size: 28px;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.faq-answer {
+  padding: 0 28px 24px;
+  color: var(--text-color);
+  line-height: 1.8;
+}

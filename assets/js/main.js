@@ -42,3 +42,63 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "light");
     }
 });
+
+
+/*==============================================
+FAQ ACCORDION
+==============================================*/
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    const button = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    const icon = button.querySelector("span:last-child");
+
+    answer.style.display = "none";
+
+    button.addEventListener("click", () => {
+
+        faqItems.forEach(otherItem => {
+
+            if (otherItem !== item) {
+                otherItem.querySelector(".faq-answer").style.display = "none";
+                otherItem.querySelector("span:last-child").textContent = "+";
+            }
+
+        });
+
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            icon.textContent = "+";
+        } else {
+            answer.style.display = "block";
+            icon.textContent = "−";
+        }
+
+    });
+
+});
+
+/*====================================================
+SCROLL REVEAL
+====================================================*/
+const revealElements = document.querySelectorAll(".reveal");
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+revealElements.forEach((element) => {
+  revealObserver.observe(element);
+});

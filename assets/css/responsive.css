@@ -34,3 +34,25 @@
     display: none;
   }
 }
+
+/*====================================================
+RESPONSIVE
+====================================================*/
+
+@media (max-width: 991px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .footer-brand p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
