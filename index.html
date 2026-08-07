@@ -24,6 +24,7 @@
 
   <!-- ===== RESPONSIVE ===== -->
   <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -57,11 +58,9 @@
       <!-- ===== Dark/Light Mode ===== -->
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
         <!-- Sun Icon -->
-
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
-
           <path d="M12 1v2"></path>
           <path d="M12 21v2"></path>
           <path d="M4.22 4.22l1.42 1.42"></path>
@@ -71,21 +70,21 @@
           <path d="M4.22 19.78l1.42-1.42"></path>
           <path d="M18.36 5.64l1.42-1.42"></path>
         </svg>
-
         <!-- Moon Icon -->
-
         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3"></path>
         </svg>
       </button>
 
+      <!-- ===== Menu Toggle ===== -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <!-- ===== CTA ===== -->
       <a href="#contact" class="btn btn-primary"> Enroll Now </a>
 
       <!-- ===== MOBILE MENU ===== -->
-
-      <div class="menu-toggle">☰</div>
     </div>
   </header>
   <main>
@@ -115,15 +114,15 @@
           </div>
           <div class="hero-stats">
             <div>
-              <h3>1000</h3>
+              <h3 class="counter" data-target="1000">1000</h3>
               <span>Students</span>
             </div>
             <div>
-              <h3>20+</h3>
+              <h3 class="counter" data-target="20">20+</h3>
               <span>Courses</span>
             </div>
             <div>
-              <h3>95%</h3>
+              <h3 class="counter" data-target="95">95%</h3>
               <span>Success Rate</span>
             </div>
           </div>
@@ -786,8 +785,8 @@
               <div>
                 <h3>Our Location</h3>
                 <p>
-                  NITS Computer Training Institute<br>
-                  Narayanganj, Bangladesh
+                  NITS Computer Training Institute, Borabo,<br>
+                  Tarabo Municipality, Narayanganj, Bangladesh
                 </p>
               </div>
 
@@ -800,7 +799,7 @@
               <div>
                 <h3>Call Us</h3>
                 <p>
-                  +880 1XXX-XXXXXX
+                  +880 1567818036
                 </p>
               </div>
 

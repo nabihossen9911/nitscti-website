@@ -3,8 +3,8 @@
 =========================================*/
 const menuToggle = document.querySelector(".menu-toggle");
 const navbar = document.querySelector(".navbar");
-if(menuToggle){
-    menuToggle.addEventListener("click",()=>{
+if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
         navbar.classList.toggle("active");
     });
 }
@@ -14,11 +14,11 @@ if(menuToggle){
   ACTIVE NAVIGATION
 =========================================*/
 
-const navLinks=document.querySelectorAll(".nav-list a");
+const navLinks = document.querySelectorAll(".nav-list a");
 
-navLinks.forEach(link=>{
-    link.addEventListener("click",()=>{
-        navLinks.forEach(item=>item.classList.remove("active"));
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.forEach(item => item.classList.remove("active"));
         link.classList.add("active");
     });
 });
@@ -86,21 +86,21 @@ SCROLL REVEAL
 ====================================================*/
 const revealElements = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  }
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.15,
+    }
 );
 
 revealElements.forEach((element) => {
-  revealObserver.observe(element);
+    revealObserver.observe(element);
 });
 
 /*====================================================
@@ -209,4 +209,93 @@ navLinks.forEach(link => {
 
     });
 
+});
+
+// ======================================================
+// HERO COUNTER ANIMATION
+// ======================================================
+
+const counters = document.querySelectorAll(".counter");
+
+const animateCounter = (counter) => {
+    const target = +counter.dataset.target;
+    let current = 0;
+
+    const increment = target / 100;
+
+    const updateCounter = () => {
+        current += increment;
+
+        if (current < target) {
+            counter.innerText = Math.ceil(current);
+            requestAnimationFrame(updateCounter);
+        } else {
+            if (target === 1000 || target === 20 || target === 95) {
+                counter.innerText = target + "+";
+            } else {
+                counter.innerText = target;
+            }
+        }
+    };
+
+    updateCounter();
+};
+
+const heroSection = document.querySelector("#hero");
+
+const heroObserver = new IntersectionObserver(
+    (entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            counters.forEach((counter) => animateCounter(counter));
+
+            observer.unobserve(entry.target);
+        });
+    },
+    {
+        threshold: 0.4,
+    }
+);
+
+heroObserver.observe(heroSection);
+
+// ======================================================
+// MOBILE MENU TOGGLE
+// ======================================================
+
+
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+
+    const icon = menuToggle.querySelector("i");
+
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
+});
+
+
+/* =========================================
+   MOBILE MENU TOGGLE
+========================================= */
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+
+    if (navbar.classList.contains("active")) {
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+});
+
+const mobileLinks = document.querySelectorAll(".navbar a");
+mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+
+    });
 });
