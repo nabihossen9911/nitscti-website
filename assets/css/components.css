@@ -15,9 +15,11 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--primary-dark));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark)
+  );
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -162,10 +164,12 @@
   left: -120%;
   width: 70%;
   height: 100%;
-  background: linear-gradient(120deg,
-      transparent,
-      rgba(255, 255, 255, 0.45),
-      transparent);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
   transition: left 0.7s ease;
 }
 

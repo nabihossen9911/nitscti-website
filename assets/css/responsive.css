@@ -1,7 +1,7 @@
 /*=========================================*
 LARGE DEVICES (Laptop)
 *=========================================*/
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .container {
     width: min(94%, var(--container-width));
   }
@@ -18,8 +18,7 @@ LARGE DEVICES (Laptop)
 /*=========================================*
 TABLET
 *=========================================*/
-@media (max-width:992px) {
-
+@media (max-width: 992px) {
   .menu-toggle {
     display: flex;
     align-items: center;
@@ -37,8 +36,8 @@ TABLET
     display: none;
     flex-direction: column;
     padding: 30px 0;
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   }
 
   .navbar.active {
@@ -65,6 +64,9 @@ TABLET
   .hero-content {
     order: 2;
     gap: 16px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
   .hero-image {
@@ -89,14 +91,12 @@ TABLET
   .footer-brand p {
     margin-inline: auto;
   }
-
 }
 
 /*=========================================*
 MOBILE
 *=========================================*/
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .logo img {
     height: 48px;
   }
@@ -108,7 +108,7 @@ MOBILE
   }
 
   .hero-description {
-    font-size: .92rem;
+    font-size: 0.92rem;
     line-height: 1.65;
     max-width: 300px;
     margin: auto;
@@ -134,7 +134,7 @@ MOBILE
     align-items: center;
     justify-content: center;
     padding: 0;
-    font-size: .88rem;
+    font-size: 0.88rem;
     font-weight: 600;
     border-radius: 12px;
   }
@@ -171,19 +171,69 @@ MOBILE
   .btn-outline {
     width: 150px;
     padding: 12px 0;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
+  /*About */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-image {
+    order: 1;
+  }
+
+  .about-content {
+    order: 2;
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .about p {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .about-list {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about .btn {
+    width: 180px;
+  }
+
+  /* =========================Test================*/
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 60px;
+  }
+  .contact-form {
+    order: 1;
+  }
+  .contact-info {
+    order: 2;
+  }
 }
-
-
-
 
 /*=========================================*
 SMALL MOBILE
 *=========================================*/
-@media (max-width:576px) {
-
+@media (max-width: 576px) {
   .container {
     width: 92%;
   }
@@ -198,12 +248,9 @@ SMALL MOBILE
 
   .hero p {
     line-height: 1.5;
-
   }
 
   .floating-card {
     left: -5px;
   }
-
-
 }
