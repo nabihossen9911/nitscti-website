@@ -166,6 +166,7 @@ MOBILE
     padding: 12px 18px;
     border-radius: 16px;
     left: -5px;
+    padding: 8px 14px;
   }
 
   .btn-outline {
@@ -174,7 +175,7 @@ MOBILE
     font-size: 0.9rem;
   }
 
-  /*About */
+  /*=================== About Section ====================*/
   .about {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -188,12 +189,15 @@ MOBILE
   .about-content {
     order: 2;
     align-items: center;
+    width: 100%;
   }
 
   .about-image img {
-    max-width: 320px;
+    max-width: 300px;
     width: 100%;
-    margin: 0 auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .about h2 {
@@ -201,33 +205,225 @@ MOBILE
     line-height: 1.2;
   }
 
-  .about p {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
   .about-list {
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .about-list li {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .about .btn {
     width: 180px;
+    margin-top: 6px;
   }
 
-  /* =========================Test================*/
+  .experience-badge {
+    right: 12px;
+    bottom: 14px;
+    left: auto;
+    padding: 8px 14px;
+  }
+
+  /*=================== Features Section ====================*/
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .feature-card {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .feature-card p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .feature-icon {
+    margin: 0 auto 18px;
+  }
+
+
+  /*=========================================*
+COURSES
+*=========================================*/
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .course-card {
+    height: 100%;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .course-card img {
+    height: 240px;
+    object-fit: cover;
+  }
+
+  /*=========================================*
+COURSES
+*=========================================*/
+
+  .course-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .course-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* ==================================================
+   COURSES SECTION
+================================================== */
+
+  .course-image img {
+    height: 210px;
+    object-fit: cover;
+  }
+
+  .course-content {
+    padding: 22px;
+  }
+
+  .course-content h3 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .course-content p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .course-meta {
+    margin: 18px 0;
+  }
+
+  .course-card .btn {
+    width: 100%;
+
+  }
+
+  /* ==========================================
+   Gallery Section
+========================================== */
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .gallery-item img {
+    height: 190px;
+  }
+
+  .gallery-overlay {
+    display: none;
+  }
+
+  .gallery-item {
+    border-radius: 16px;
+    overflow: hidden;
+
+  }
+
+  /* ==========================
+   Gallery Mobile Fix
+========================== */
+
+  .gallery-item:hover {
+    transform: none;
+  }
+
+  .gallery-item:hover img {
+    transform: none;
+  }
+
+  /* ==========================================
+   Testimonials Section
+========================================== */
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .testimonial-text {
+    font-size: .92rem;
+    line-height: 1.8;
+  }
+
+  .testimonial-user {
+    margin-top: 20px;
+  }
+
+  .testimonial-avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .testimonial-user h4 {
+    font-size: 1rem;
+  }
+
+  .testimonial-user span {
+    font-size: .82rem;
+  }
+
+  .testimonial-card:hover {
+    transform: none;
+  }
+
+  /* ==========================================
+   CONTACT SECTION
+  ========================================== */
+
   .contact-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-top: 60px;
+    gap: 32px;
+    margin-top: 50px;
   }
+
   .contact-form {
     order: 1;
+    width: 100%;
   }
+
   .contact-info {
     order: 2;
+    width: 100%;
+    gap: 16px;
   }
+
+  /* ==========================================
+   FOOTER
+========================================== */
+
+
 }
 
 /*=========================================*
