@@ -13,6 +13,23 @@ LARGE DEVICES (Laptop)
   .hero {
     gap: 60px;
   }
+
+  /* ================= Course Page ================= */
+
+  .course-overview-grid {
+    gap: 35px;
+  }
+
+  .learning-grid,
+  .curriculum-grid,
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instructor-card {
+    gap: 40px;
+    padding: 40px;
+  }
 }
 
 /*=========================================*
@@ -63,7 +80,6 @@ TABLET
 
   .hero-content {
     order: 2;
-    gap: 16px;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -90,6 +106,33 @@ TABLET
 
   .footer-brand p {
     margin-inline: auto;
+  }
+
+  /* ================= Course Page ================= */
+
+  .course-hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .course-hero-buttons {
+    justify-content: center;
+  }
+
+  .course-overview-grid,
+  .instructor-card {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-grid,
+  .curriculum-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-cta-actions {
+    justify-content: center;
   }
 }
 
@@ -188,10 +231,6 @@ MOBILE
     font-size: 0.9rem;
   }
 
-  #about,
-  #hero {
-    padding: 60px 0;
-  }
 
   #about,
   #hero {
@@ -226,6 +265,7 @@ MOBILE
     object-fit: cover;
     object-position: center top;
   }
+
   .about p {
     font-size: 0.92rem;
     line-height: 1.2;
@@ -449,8 +489,63 @@ COURSES
   }
 
   /* ==========================================
-   FOOTER
+   COURSE PAGE
 ========================================== */
+
+  .course-hero {
+    padding: 120px 0 70px;
+  }
+
+  .course-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .course-hero p {
+    font-size: .95rem;
+    line-height: 1.8;
+  }
+
+  .course-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-hero-buttons .btn {
+    width: 220px;
+  }
+
+  .course-overview-card,
+  .learning-card,
+  .curriculum-card,
+  .review-card {
+    padding: 24px;
+  }
+
+  .instructor-card {
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .instructor-image {
+    max-width: 260px;
+  }
+
+  .course-cta-box {
+    padding: 50px 24px;
+  }
+
+  .course-cta-box h2 {
+    font-size: 1.9rem;
+  }
+
+  .course-cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-cta-actions .btn {
+    width: 220px;
+  }
 }
 
 /*=========================================*
@@ -469,11 +564,29 @@ SMALL MOBILE
     font-size: 2rem;
   }
 
-  .hero p {
-    line-height: 1.3;
-  }
-
   .floating-card {
     left: -5px;
+  }
+
+  /* ================= Course Page ================= */
+
+  .course-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .course-hero p {
+    font-size: .9rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .course-cta-box {
+    padding: 40px 20px;
+  }
+
+  .course-cta-box h2 {
+    font-size: 1.6rem;
   }
 }
