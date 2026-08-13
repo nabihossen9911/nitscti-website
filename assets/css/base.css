@@ -44,17 +44,19 @@
   /* Brand */
   --primary-color: #199edc;
   --primary-dark: #1487bc;
-  --heading-color: #231f20;
-  --text-color: #555555;
-  --white: #ffffff;
+
   --bg-color: #ffffff;
   --surface-color: #ffffff;
+
   --heading-color: #231f20;
   --text-color: #555555;
   --gray: #777777;
+
   --border-color: #e5e7eb;
   --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
   --transition: 0.35s ease;
+
+  --white: #ffffff;
 
   /* Layout */
   --container-width: 1200px;
@@ -133,6 +135,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /*=========================================
@@ -142,6 +145,11 @@ img {
 ::selection {
   background: var(--primary-color);
   color: #fff;
+}
+
+:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
 }
 
 /*=========================================
