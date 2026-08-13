@@ -71,20 +71,6 @@
 }
 
 /*=========================================
-  BADGE
-=========================================*/
-
-.badge {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 50px;
-  background: rgba(25, 158, 220, 0.08);
-  color: var(--primary-color);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-/*=========================================
   DIVIDER
 =========================================*/
 

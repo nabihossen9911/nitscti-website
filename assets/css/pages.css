@@ -248,7 +248,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 20px;
+  max-width: 560px;
 }
 
 .about-content h2 {
@@ -286,6 +287,7 @@ section {
   line-height: 1.9;
   color: var(--text-color);
 }
+
 .about-list {
   display: flex;
   flex-direction: column;
@@ -301,6 +303,25 @@ section {
   gap: 12px;
   font-weight: 500;
   color: var(--heading-color);
+  line-height: 1.6;
+}
+
+.about-stats {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 12px;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 6px;
+}
+
+.stat-item span {
+  font-size: 0.95rem;
+  color: var(--text-color);
 }
 
 .about-image {
@@ -328,7 +349,8 @@ section {
 .experience-badge {
   position: absolute;
   bottom: 35px;
-  right: -25px;
+  right: -15px;
+  width: max-content;
   border: 1px solid rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(18px);
