@@ -685,6 +685,9 @@ FOOTER
     margin: auto;
     margin-bottom: 24px;
   }
+  .footer-badges li {
+    min-width: 0px;
+  }
   .footer-brand,
   .footer-links {
     padding-top: 24px;
