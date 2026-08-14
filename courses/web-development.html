@@ -1,721 +1,632 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Character Encoding -->
-    <meta charset="UTF-8" />
 
-    <!-- Responsive Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Join the Full Stack Web Development Course at NITS Computer Training Institute in Narayanganj. Learn HTML, CSS, JavaScript, React, Node.js, MongoDB with live projects and freelancing support."
-    />
-    <!-- Page Title -->
-    <title>
-      Full Stack Web Development Course in Narayanganj | NITS Computer Training
-      Institute
-    </title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <!-- Character Encoding -->
+  <meta charset="UTF-8" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Responsive Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Join the Full Stack Web Development Course at NITS Computer Training Institute in Narayanganj. Learn HTML, CSS, JavaScript, React, Node.js, MongoDB with live projects and freelancing support." />
+  <!-- Page Title -->
+  <title>
+    Full Stack Web Development Course in Narayanganj | NITS Computer Training
+    Institute
+  </title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Base CSS -->
-    <link rel="stylesheet" href="../assets/css/base.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="canonical" href="https://nitscti.com/courses/web-development.html">
+  <!-- Base CSS -->
+  <link rel="stylesheet" href="../assets/css/base.css" />
 
-    <!-- Layout CSS -->
-    <link rel="stylesheet" href="../assets/css/layout.css" />
+  <!-- Layout CSS -->
+  <link rel="stylesheet" href="../assets/css/layout.css" />
 
-    <!-- Components CSS -->
-    <link rel="stylesheet" href="../assets/css/components.css" />
+  <!-- Components CSS -->
+  <link rel="stylesheet" href="../assets/css/components.css" />
 
-    <!-- Pages CSS -->
-    <link rel="stylesheet" href="../assets/css/pages.css" />
+  <!-- Pages CSS -->
+  <link rel="stylesheet" href="../assets/css/pages.css" />
 
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
 
-  <body>
-    <header class="header">
+<body>
+  <header class="header">
+    <div class="container">
+      <!-- ===== LOGO ===== -->
+
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/logo/web/nitscti-logo.svg" alt="NITS COMPUTER TRAINING INSTITUTE Logo" />
+      </a>
+
+      <!-- ===== NAVIGATION ===== -->
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li>
+            <a href="../index.html" class="active" aria-label="Go to Home section">Home</a>
+          </li>
+          <li>
+            <a href="../index.html#about" aria-label="Go to About section">About</a>
+          </li>
+          <li>
+            <a href="../index.html#features" aria-label="Go to Features section">Features</a>
+          </li>
+          <li>
+            <a href="../index.html#courses" aria-label="Go to Courses section">Courses</a>
+          </li>
+          <li>
+            <a href="../index.html#gallery" aria-label="Go to Gallery section">Gallery</a>
+          </li>
+          <li>
+            <a href="../index.html#testimonials" aria-label="Go to Testimonials section">Testimonials</a>
+          </li>
+          <li>
+            <a href="../index.html#faq" aria-label="Go to FAQ section">FAQ</a>
+          </li>
+          <li>
+            <a href="../index.html#contact" aria-label="Go to Contact section">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ===== Dark/Light Mode ===== -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <!-- Sun Icon -->
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <path d="M12 1v2"></path>
+          <path d="M12 21v2"></path>
+          <path d="M4.22 4.22l1.42 1.42"></path>
+          <path d="M18.36 18.36l1.42 1.42"></path>
+          <path d="M1 12h2"></path>
+          <path d="M21 12h2"></path>
+          <path d="M4.22 19.78l1.42-1.42"></path>
+          <path d="M18.36 5.64l1.42-1.42"></path>
+        </svg>
+        <!-- Moon Icon -->
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3"></path>
+        </svg>
+      </button>
+
+      <!-- ===== Menu Toggle ===== -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- ===== CTA ===== -->
+      <a href="../index.html#contact" class="btn btn-primary"
+        aria-label="Enroll now at NITS Computer Training Institute">
+        Enroll Now
+      </a>
+
+      <!-- ===== MOBILE MENU ===== -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Course Hero -->
+    <section class="course-hero">
       <div class="container">
-        <!-- ===== LOGO ===== -->
+        <div class="course-hero-content">
+          <span class="section-badge"> 🚀 Professional IT Course </span>
 
-        <a href="../index.html" class="logo">
-          <img
-            src="../assets/images/logo/web/nitscti-logo.svg"
-            alt="NITS COMPUTER TRAINING INSTITUTE Logo"
-          />
-        </a>
+          <h1>Full Stack Web Development</h1>
 
-        <!-- ===== NAVIGATION ===== -->
+          <p>
+            Learn HTML, CSS, JavaScript, React, Node.js and build real-world
+            projects that prepare you for freelancing and professional
+            software development.
+          </p>
 
-        <nav class="navbar">
-          <ul class="nav-list">
+          <div class="course-hero-meta">
+            <span>⏳ Duration: 6 Months</span>
+            <span>🎯 Level: Beginner to Advanced</span>
+            <span>📜 Certificate Included</span>
+          </div>
+
+          <div class="course-hero-actions">
+            <a href="../index.html#contact" class="btn btn-primary">
+              Enroll Now
+            </a>
+
+            <a href="../index.html#courses" class="btn btn-outline">
+              Back to Courses
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="course-overview section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">📘 Course Overview</span>
+
+          <h2>Build Professional Web Development Skills</h2>
+
+          <p>
+            This course is designed to take you from complete beginner to
+            professional full stack developer through practical projects.
+          </p>
+        </div>
+
+        <div class="course-overview-grid">
+          <!-- Left -->
+          <div class="overview-content">
+            <h3>What You'll Learn</h3>
+
+            <ul class="course-list">
+              <li>✔ HTML5 & Semantic Markup</li>
+              <li>✔ CSS3 & Responsive Design</li>
+              <li>✔ JavaScript (ES6+)</li>
+              <li>✔ React.js Fundamentals</li>
+              <li>✔ Node.js & Express</li>
+              <li>✔ MongoDB Database</li>
+              <li>✔ REST API Development</li>
+              <li>✔ Git & GitHub Workflow</li>
+              <li>✔ Deployment & Hosting</li>
+              <li>✔ Freelancing & Portfolio Building</li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="overview-card">
+            <h3>Course Information</h3>
+
+            <div class="info-item">
+              <span>Duration</span>
+              <strong>6 Months</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Class Type</span>
+              <strong>Offline + Live Support</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Projects</span>
+              <strong>15+</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Certificate</span>
+              <strong>Yes</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Support</span>
+              <strong>Lifetime</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You Will Learn -->
+    <section class="course-learning section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">🎯 Learning Outcomes</span>
+
+          <h2>By The End Of This Course You Will Be Able To</h2>
+
+          <p>
+            Gain practical skills that prepare you for freelancing, software
+            development jobs and building your own web applications.
+          </p>
+        </div>
+
+        <div class="learning-grid">
+          <div class="learning-item">
+            <h3>🌐 Build Responsive Websites</h3>
+            <p>
+              Create modern, mobile-friendly websites using HTML5 and CSS3
+              best practices.
+            </p>
+          </div>
+
+          <div class="learning-item">
+            <h3>⚡ Develop Interactive Applications</h3>
+            <p>
+              Use JavaScript to build dynamic user interfaces and interactive
+              web experiences.
+            </p>
+          </div>
+
+          <div class="learning-item">
+            <h3>⚛ Master React.js</h3>
+            <p>
+              Build reusable components and modern Single Page Applications
+              (SPA) with React.
+            </p>
+          </div>
+
+          <div class="learning-item">
+            <h3>🗄 Work With Databases</h3>
+            <p>
+              Store, manage and retrieve application data using MongoDB and
+              backend technologies.
+            </p>
+          </div>
+
+          <div class="learning-item">
+            <h3>🚀 Deploy Live Projects</h3>
+            <p>
+              Publish your projects online using professional deployment
+              workflows.
+            </p>
+          </div>
+
+          <div class="learning-item">
+            <h3>💼 Start Your Career</h3>
+            <p>
+              Build a portfolio, prepare for interviews and begin freelancing
+              with confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Curriculum -->
+    <section class="course-curriculum section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">📚 Course Curriculum</span>
+
+          <h2>What You Will Learn</h2>
+
+          <p>
+            A structured learning roadmap from beginner to professional level.
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="curriculum-card">
+            <h3>Module 01</h3>
+            <h4>HTML Fundamentals</h4>
+
+            <ul>
+              <li>Semantic HTML</li>
+              <li>Forms</li>
+              <li>Tables</li>
+              <li>Accessibility Basics</li>
+            </ul>
+          </div>
+
+          <div class="curriculum-card">
+            <h3>Module 02</h3>
+            <h4>CSS Mastery</h4>
+
+            <ul>
+              <li>Flexbox</li>
+              <li>Grid</li>
+              <li>Animation</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="curriculum-card">
+            <h3>Module 03</h3>
+            <h4>JavaScript</h4>
+
+            <ul>
+              <li>Variables</li>
+              <li>Functions</li>
+              <li>DOM</li>
+              <li>ES6+</li>
+            </ul>
+          </div>
+
+          <div class="curriculum-card">
+            <h3>Module 04</h3>
+            <h4>React.js</h4>
+
+            <ul>
+              <li>Components</li>
+              <li>Props</li>
+              <li>Hooks</li>
+              <li>Routing</li>
+            </ul>
+          </div>
+
+          <div class="curriculum-card">
+            <h3>Module 05</h3>
+            <h4>Backend Development</h4>
+
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>REST API</li>
+              <li>Authentication</li>
+            </ul>
+          </div>
+
+          <div class="curriculum-card">
+            <h3>Module 06</h3>
+            <h4>Database & Deployment</h4>
+
+            <ul>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Deployment</li>
+              <li>Portfolio Project</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Instructor -->
+    <section class="course-instructor section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"> 👨‍🏫 Meet Your Instructor </span>
+
+          <h2>Learn From Industry Experience</h2>
+
+          <p>
+            Learn from experienced professionals who focus on practical
+            skills, real projects and career development.
+          </p>
+        </div>
+
+        <div class="instructor-card">
+          <!-- Image -->
+          <div class="instructor-image">
+            <img src="../assets/images/students/student-1.jpg" alt="Nabi Hossen - Lead Web Development Instructor" />
+          </div>
+
+          <!-- Content -->
+          <div class="instructor-content">
+            <h3>NABI HOSSEN</h3>
+
+            <span class="instructor-role">
+              Lead Web Development Instructor
+            </span>
+
+            <p>
+              With years of practical experience in web development,
+              freelancing and mentoring students, our instructor helps
+              learners gain job-ready skills through project-based learning.
+            </p>
+
+            <ul class="instructor-features">
+              <li>✔ Practical Project-Based Teaching</li>
+
+              <li>✔ Career & Freelancing Guidance</li>
+
+              <li>✔ One-to-One Student Support</li>
+
+              <li>✔ Industry Standard Development Workflow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Reviews -->
+    <section class="course-reviews section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">⭐ Student Success</span>
+
+          <h2>What Our Students Say</h2>
+
+          <p>
+            Real experiences from students who completed the course and
+            started building their careers.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+
+            <p>
+              This course completely changed my confidence in programming. The
+              project-based approach made learning enjoyable and practical.
+            </p>
+
+            <h4>Rahim Ahmed</h4>
+
+            <span>Freelance Web Developer</span>
+          </article>
+
+          <article class="review-card">
+            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+
+            <p>
+              Every module was easy to understand and the instructor always
+              supported us whenever we got stuck.
+            </p>
+
+            <h4>Nusrat Jahan</h4>
+
+            <span>Frontend Developer</span>
+          </article>
+
+          <article class="review-card">
+            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+
+            <p>
+              I built my first portfolio website during this course and got my
+              first client shortly after completing it.
+            </p>
+
+            <h4>Sabbir Hasan</h4>
+
+            <span>Junior Web Developer</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course FAQ -->
+    <section class="course-faq section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">❓ Frequently Asked Questions</span>
+
+          <h2>Have Questions About This Course?</h2>
+
+          <p>Here are some common questions students ask before enrolling.</p>
+        </div>
+
+        <div class="course-faq-list">
+          <details class="faq-box" open>
+            <summary>Do I need any previous programming experience?</summary>
+
+            <p>
+              No. This course starts from the basics and gradually moves to
+              advanced full stack development.
+            </p>
+          </details>
+
+          <details class="faq-box">
+            <summary>Will I receive a certificate?</summary>
+
+            <p>
+              Yes. After successfully completing the course and final project,
+              you'll receive a certificate from NITS Computer Training
+              Institute.
+            </p>
+          </details>
+
+          <details class="faq-box">
+            <summary>Is this course project-based?</summary>
+
+            <p>
+              Yes. You'll build multiple real-world projects throughout the
+              course to strengthen your portfolio.
+            </p>
+          </details>
+
+          <details class="faq-box">
+            <summary>Will I get freelancing guidance?</summary>
+
+            <p>
+              Absolutely. We provide guidance on portfolio building, client
+              communication and freelancing platforms.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment CTA -->
+    <section class="course-cta section">
+      <div class="container">
+        <div class="course-cta-box">
+          <h2>Ready To Start Your Web Development Journey?</h2>
+
+          <p>
+            Join our Full Stack Web Development course and build the practical
+            skills needed for freelancing, software companies and your own
+            professional projects.
+          </p>
+
+          <div class="course-cta-actions">
+            <a href="../index.html#contact" class="btn btn-primary"
+              aria-label="Enroll in Full Stack Web Development course">
+              Enroll Now
+            </a>
+
+            <a href="../index.html#contact" class="btn btn-outline" aria-label="Contact NITS for course information">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer reveal">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="../assets/images/logo/web/nitscti-logo.svg" alt="NITS Computer Training Institute Logo" />
+          </a>
+
+          <p>
+            NITS Computer Training Institute provides practical IT education,
+            freelancing skills and career development for students.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer Quick Links">
+          <h3>Quick Links</h3>
+
+          <ul>
             <li>
-              <a
-                href="../index.html"
-                class="active"
-                aria-label="Go to Home section"
-                >Home</a
-              >
+              <a href="../index.html#hero" aria-label="Go to Home section">Home</a>
             </li>
             <li>
-              <a href="../index.html#about" aria-label="Go to About section"
-                >About</a
-              >
+              <a href="../index.html#about" aria-label="Go to About section">About</a>
             </li>
             <li>
-              <a
-                href="../index.html#features"
-                aria-label="Go to Features section"
-                >Features</a
-              >
+              <a href="../index.html#courses" aria-label="Go to Courses section">Courses</a>
             </li>
             <li>
-              <a href="../index.html#courses" aria-label="Go to Courses section"
-                >Courses</a
-              >
-            </li>
-            <li>
-              <a href="../index.html#gallery" aria-label="Go to Gallery section"
-                >Gallery</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#testimonials"
-                aria-label="Go to Testimonials section"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a href="../index.html#faq" aria-label="Go to FAQ section">FAQ</a>
-            </li>
-            <li>
-              <a href="../index.html#contact" aria-label="Go to Contact section"
-                >Contact</a
-              >
+              <a href="../index.html#contact" aria-label="Go to Contact section">Contact</a>
             </li>
           </ul>
         </nav>
 
-        <!-- ===== Dark/Light Mode ===== -->
-        <button
-          id="theme-toggle"
-          class="theme-toggle"
-          aria-label="Toggle Theme"
-        >
-          <!-- Sun Icon -->
-          <svg
-            class="sun-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="12" cy="12" r="5"></circle>
-            <path d="M12 1v2"></path>
-            <path d="M12 21v2"></path>
-            <path d="M4.22 4.22l1.42 1.42"></path>
-            <path d="M18.36 18.36l1.42 1.42"></path>
-            <path d="M1 12h2"></path>
-            <path d="M21 12h2"></path>
-            <path d="M4.22 19.78l1.42-1.42"></path>
-            <path d="M18.36 5.64l1.42-1.42"></path>
-          </svg>
-          <!-- Moon Icon -->
-          <svg
-            class="moon-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3"></path>
-          </svg>
-        </button>
+        <div class="footer-links">
+          <h3>Courses</h3>
 
-        <!-- ===== Menu Toggle ===== -->
-        <button class="menu-toggle" aria-label="Toggle Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <!-- ===== CTA ===== -->
-        <a
-          href="../index.html#contact"
-          class="btn btn-primary"
-          aria-label="Enroll now at NITS Computer Training Institute"
-        >
-          Enroll Now
-        </a>
-
-        <!-- ===== MOBILE MENU ===== -->
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-      <!-- Course Hero -->
-      <section class="course-hero">
-        <div class="container">
-          <div class="course-hero-content">
-            <span class="section-badge"> 🚀 Professional IT Course </span>
-
-            <h1>Full Stack Web Development</h1>
-
-            <p>
-              Learn HTML, CSS, JavaScript, React, Node.js and build real-world
-              projects that prepare you for freelancing and professional
-              software development.
-            </p>
-
-            <div class="course-hero-meta">
-              <span>⏳ Duration: 6 Months</span>
-              <span>🎯 Level: Beginner to Advanced</span>
-              <span>📜 Certificate Included</span>
-            </div>
-
-            <div class="course-hero-actions">
-              <a href="../index.html#contact" class="btn btn-primary">
-                Enroll Now
-              </a>
-
-              <a href="../index.html#courses" class="btn btn-outline">
-                Back to Courses
-              </a>
-            </div>
-          </div>
+          <ul>
+            <li>
+              <a href="#" aria-label="Go to Web Development course">Web Development</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Graphic Design course">Graphic Design</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Office Applications course">Office Applications</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Digital Marketing course">Digital Marketing</a>
+            </li>
+          </ul>
         </div>
-      </section>
 
-      <!-- Course Overview -->
-      <section class="course-overview section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge">📘 Course Overview</span>
-
-            <h2>Build Professional Web Development Skills</h2>
-
-            <p>
-              This course is designed to take you from complete beginner to
-              professional full stack developer through practical projects.
-            </p>
-          </div>
-
-          <div class="course-overview-grid">
-            <!-- Left -->
-            <div class="overview-content">
-              <h3>What You'll Learn</h3>
-
-              <ul class="course-list">
-                <li>✔ HTML5 & Semantic Markup</li>
-                <li>✔ CSS3 & Responsive Design</li>
-                <li>✔ JavaScript (ES6+)</li>
-                <li>✔ React.js Fundamentals</li>
-                <li>✔ Node.js & Express</li>
-                <li>✔ MongoDB Database</li>
-                <li>✔ REST API Development</li>
-                <li>✔ Git & GitHub Workflow</li>
-                <li>✔ Deployment & Hosting</li>
-                <li>✔ Freelancing & Portfolio Building</li>
-              </ul>
-            </div>
-
-            <!-- Right -->
-            <div class="overview-card">
-              <h3>Course Information</h3>
-
-              <div class="info-item">
-                <span>Duration</span>
-                <strong>6 Months</strong>
-              </div>
-
-              <div class="info-item">
-                <span>Class Type</span>
-                <strong>Offline + Live Support</strong>
-              </div>
-
-              <div class="info-item">
-                <span>Projects</span>
-                <strong>15+</strong>
-              </div>
-
-              <div class="info-item">
-                <span>Certificate</span>
-                <strong>Yes</strong>
-              </div>
-
-              <div class="info-item">
-                <span>Support</span>
-                <strong>Lifetime</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- What You Will Learn -->
-      <section class="course-learning section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge">🎯 Learning Outcomes</span>
-
-            <h2>By The End Of This Course You Will Be Able To</h2>
-
-            <p>
-              Gain practical skills that prepare you for freelancing, software
-              development jobs and building your own web applications.
-            </p>
-          </div>
-
-          <div class="learning-grid">
-            <div class="learning-item">
-              <h3>🌐 Build Responsive Websites</h3>
-              <p>
-                Create modern, mobile-friendly websites using HTML5 and CSS3
-                best practices.
-              </p>
-            </div>
-
-            <div class="learning-item">
-              <h3>⚡ Develop Interactive Applications</h3>
-              <p>
-                Use JavaScript to build dynamic user interfaces and interactive
-                web experiences.
-              </p>
-            </div>
-
-            <div class="learning-item">
-              <h3>⚛ Master React.js</h3>
-              <p>
-                Build reusable components and modern Single Page Applications
-                (SPA) with React.
-              </p>
-            </div>
-
-            <div class="learning-item">
-              <h3>🗄 Work With Databases</h3>
-              <p>
-                Store, manage and retrieve application data using MongoDB and
-                backend technologies.
-              </p>
-            </div>
-
-            <div class="learning-item">
-              <h3>🚀 Deploy Live Projects</h3>
-              <p>
-                Publish your projects online using professional deployment
-                workflows.
-              </p>
-            </div>
-
-            <div class="learning-item">
-              <h3>💼 Start Your Career</h3>
-              <p>
-                Build a portfolio, prepare for interviews and begin freelancing
-                with confidence.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Course Curriculum -->
-      <section class="course-curriculum section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge">📚 Course Curriculum</span>
-
-            <h2>What You Will Learn</h2>
-
-            <p>
-              A structured learning roadmap from beginner to professional level.
-            </p>
-          </div>
-
-          <div class="curriculum-grid">
-            <div class="curriculum-card">
-              <h3>Module 01</h3>
-              <h4>HTML Fundamentals</h4>
-
-              <ul>
-                <li>Semantic HTML</li>
-                <li>Forms</li>
-                <li>Tables</li>
-                <li>Accessibility Basics</li>
-              </ul>
-            </div>
-
-            <div class="curriculum-card">
-              <h3>Module 02</h3>
-              <h4>CSS Mastery</h4>
-
-              <ul>
-                <li>Flexbox</li>
-                <li>Grid</li>
-                <li>Animation</li>
-                <li>Responsive Design</li>
-              </ul>
-            </div>
-
-            <div class="curriculum-card">
-              <h3>Module 03</h3>
-              <h4>JavaScript</h4>
-
-              <ul>
-                <li>Variables</li>
-                <li>Functions</li>
-                <li>DOM</li>
-                <li>ES6+</li>
-              </ul>
-            </div>
-
-            <div class="curriculum-card">
-              <h3>Module 04</h3>
-              <h4>React.js</h4>
-
-              <ul>
-                <li>Components</li>
-                <li>Props</li>
-                <li>Hooks</li>
-                <li>Routing</li>
-              </ul>
-            </div>
-
-            <div class="curriculum-card">
-              <h3>Module 05</h3>
-              <h4>Backend Development</h4>
-
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>REST API</li>
-                <li>Authentication</li>
-              </ul>
-            </div>
-
-            <div class="curriculum-card">
-              <h3>Module 06</h3>
-              <h4>Database & Deployment</h4>
-
-              <ul>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-                <li>Deployment</li>
-                <li>Portfolio Project</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Course Instructor -->
-      <section class="course-instructor section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge"> 👨‍🏫 Meet Your Instructor </span>
-
-            <h2>Learn From Industry Experience</h2>
-
-            <p>
-              Learn from experienced professionals who focus on practical
-              skills, real projects and career development.
-            </p>
-          </div>
-
-          <div class="instructor-card">
-            <!-- Image -->
-            <div class="instructor-image">
-              <img
-                src="../assets/images/students/student-1.jpg"
-                alt="Nabi Hossen - Lead Web Development Instructor"
-              />
-            </div>
-
-            <!-- Content -->
-            <div class="instructor-content">
-              <h3>NABI HOSSEN</h3>
-
-              <span class="instructor-role">
-                Lead Web Development Instructor
-              </span>
-
-              <p>
-                With years of practical experience in web development,
-                freelancing and mentoring students, our instructor helps
-                learners gain job-ready skills through project-based learning.
-              </p>
-
-              <ul class="instructor-features">
-                <li>✔ Practical Project-Based Teaching</li>
-
-                <li>✔ Career & Freelancing Guidance</li>
-
-                <li>✔ One-to-One Student Support</li>
-
-                <li>✔ Industry Standard Development Workflow</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Student Reviews -->
-      <section class="course-reviews section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge">⭐ Student Success</span>
-
-            <h2>What Our Students Say</h2>
-
-            <p>
-              Real experiences from students who completed the course and
-              started building their careers.
-            </p>
-          </div>
-
-          <div class="reviews-grid">
-            <article class="review-card">
-              <div class="review-rating">⭐⭐⭐⭐⭐</div>
-
-              <p>
-                This course completely changed my confidence in programming. The
-                project-based approach made learning enjoyable and practical.
-              </p>
-
-              <h4>Rahim Ahmed</h4>
-
-              <span>Freelance Web Developer</span>
-            </article>
-
-            <article class="review-card">
-              <div class="review-rating">⭐⭐⭐⭐⭐</div>
-
-              <p>
-                Every module was easy to understand and the instructor always
-                supported us whenever we got stuck.
-              </p>
-
-              <h4>Nusrat Jahan</h4>
-
-              <span>Frontend Developer</span>
-            </article>
-
-            <article class="review-card">
-              <div class="review-rating">⭐⭐⭐⭐⭐</div>
-
-              <p>
-                I built my first portfolio website during this course and got my
-                first client shortly after completing it.
-              </p>
-
-              <h4>Sabbir Hasan</h4>
-
-              <span>Junior Web Developer</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Course FAQ -->
-      <section class="course-faq section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-badge">❓ Frequently Asked Questions</span>
-
-            <h2>Have Questions About This Course?</h2>
-
-            <p>Here are some common questions students ask before enrolling.</p>
-          </div>
-
-          <div class="course-faq-list">
-            <details class="faq-box" open>
-              <summary>Do I need any previous programming experience?</summary>
-
-              <p>
-                No. This course starts from the basics and gradually moves to
-                advanced full stack development.
-              </p>
-            </details>
-
-            <details class="faq-box">
-              <summary>Will I receive a certificate?</summary>
-
-              <p>
-                Yes. After successfully completing the course and final project,
-                you'll receive a certificate from NITS Computer Training
-                Institute.
-              </p>
-            </details>
-
-            <details class="faq-box">
-              <summary>Is this course project-based?</summary>
-
-              <p>
-                Yes. You'll build multiple real-world projects throughout the
-                course to strengthen your portfolio.
-              </p>
-            </details>
-
-            <details class="faq-box">
-              <summary>Will I get freelancing guidance?</summary>
-
-              <p>
-                Absolutely. We provide guidance on portfolio building, client
-                communication and freelancing platforms.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- Enrollment CTA -->
-      <section class="course-cta section">
-        <div class="container">
-          <div class="course-cta-box">
-            <h2>Ready To Start Your Web Development Journey?</h2>
-
-            <p>
-              Join our Full Stack Web Development course and build the practical
-              skills needed for freelancing, software companies and your own
-              professional projects.
-            </p>
-
-            <div class="course-cta-actions">
-              <a
-                href="../index.html#contact"
-                class="btn btn-primary"
-                aria-label="Enroll in Full Stack Web Development course"
-              >
-                Enroll Now
-              </a>
-
-              <a
-                href="../index.html#contact"
-                class="btn btn-outline"
-                aria-label="Contact NITS for course information"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer reveal">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <a href="#" class="logo">
-              <img
-                src="../assets/images/logo/web/nitscti-logo.svg"
-                alt="NITS Computer Training Institute Logo"
-              />
-            </a>
-
-            <p>
-              NITS Computer Training Institute provides practical IT education,
-              freelancing skills and career development for students.
-            </p>
-          </div>
-
-          <nav class="footer-links" aria-label="Footer Quick Links">
-            <h3>Quick Links</h3>
-
-            <ul>
-              <li>
-                <a href="../index.html#hero" aria-label="Go to Home section"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="../index.html#about" aria-label="Go to About section"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../index.html#courses"
-                  aria-label="Go to Courses section"
-                  >Courses</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../index.html#contact"
-                  aria-label="Go to Contact section"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <div class="footer-links">
-            <h3>Courses</h3>
-
-            <ul>
-              <li>
-                <a href="#" aria-label="Go to Web Development course"
-                  >Web Development</a
-                >
-              </li>
-              <li>
-                <a href="#" aria-label="Go to Graphic Design course"
-                  >Graphic Design</a
-                >
-              </li>
-              <li>
-                <a href="#" aria-label="Go to Office Applications course"
-                  >Office Applications</a
-                >
-              </li>
-              <li>
-                <a href="#" aria-label="Go to Digital Marketing course"
-                  >Digital Marketing</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-links">
-            <h3>Contact</h3>
-
-            <ul>
-              <li>📍 Narayanganj</li>
-              <li>📞 +8801567-818036</li>
-              <li>✉️ info@nitscti.com</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>© 2026 NITS Computer Training Institute. All Rights Reserved.</p>
+        <div class="footer-links">
+          <h3>Contact</h3>
+
+          <ul>
+            <li>📍 Narayanganj</li>
+            <li>📞 +8801567-818036</li>
+            <li>✉️ info@nitscti.com</li>
+          </ul>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom">
+        <p>© 2026 NITS Computer Training Institute. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Main JavaScript -->
-    <script src="../assets/js/main.js"></script>
-  </body>
+  <!-- Main JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
 </html>
