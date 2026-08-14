@@ -668,16 +668,23 @@ body.dark-mode #about::after {
 
 .course-content {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .course-content h3 {
   margin-bottom: 12px;
+
 }
+
 
 .course-content p {
   margin-bottom: 20px;
   color: var(--text-color);
   line-height: 1.7;
+  min-height: 81px;
+
 }
 
 /*=========================================
@@ -878,7 +885,7 @@ CONTACT
 
 .contact-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 18px;
   padding: 20px;
   background: var(--surface-color);
@@ -963,83 +970,274 @@ CONTACT
 FOOTER
 ====================================================*/
 
-/* Footer */
 .footer {
-  padding: 80px 0 30px;
+  margin-top: 120px;
+  padding: 70px 0 28px;
   background: rgba(0, 0, 0, 0.12);
   border-top: 1px solid var(--border-color);
-  margin-top: 120px;
 }
 
-/* Footer Grid */
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 50px;
+  grid-template-columns: 1.35fr .95fr 1fr 1.15fr;
+  gap: 25px;
+  align-items: start;
 }
 
-/* Brand */
+
+/*====================================================
+BRAND
+====================================================*/
+
+.footer-brand .logo {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.footer-brand .logo img {
+  width: 240px;
+  height: auto;
+}
+
 .footer-brand p {
-  margin-top: 20px;
-  max-width: 380px;
-  line-height: 1.8;
+  max-width: 310px;
   color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 
-/* Footer Heading */
-.footer-links h3 {
-  margin-bottom: 20px;
-  font-size: 22px;
+/*====================================================
+SOCIAL
+====================================================*/
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+
 }
 
-/* UL */
-.footer-links ul {
+.footer-social a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+
+  color: var(--text-color);
+  font-size: 18px;
+
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.footer-social a:hover {
+  color: #fff;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 170, 255, .28);
+}
+
+/*====================================================
+TRUST BADGES
+====================================================*/
+
+.footer-badges {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 10px;
+
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-/* LI */
-.footer-links li {
-  margin-bottom: 14px;
+.footer-badges li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .08);
   color: var(--text-color);
+  font-size: .9rem;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  justify-content: center;
 }
 
-/* Links */
-.footer-links a {
-  color: var(--text-color);
-  transition: 0.3s;
+.footer-badges li:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
 }
 
-/* Hover */
-.footer-links a:hover {
+.footer-badges i {
   color: var(--primary-color);
-  padding-left: 6px;
+  font-size: .95rem;
 }
 
-/* Bottom */
-.footer-bottom {
-  border-top: 1px solid var(--border-color);
-  padding-top: 30px;
-  text-align: center;
+/*====================================================
+LINKS
+====================================================*/
+
+.footer-links h3 {
+  margin-bottom: 22px;
+  font-size: 1.35rem;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
   color: var(--text-color);
-}
-
-/* Logo */
-.footer-brand .logo img {
-  height: 60px;
-  width: auto;
-}
-
-.footer-brand .logo img {
-  height: 75px;
-  width: auto;
 }
 
 .footer-links a {
   display: inline-block;
+  color: var(--text-color);
+  transition: var(--transition);
 }
+
+.footer-links a:hover {
+  color: var(--primary-color);
+  transform: translateX(6px);
+}
+
+/*====================================================
+CONTACT
+====================================================*/
+
+.footer-contact ul {
+  gap: 18px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 4px 0;
+}
+
+.footer-contact i {
+  width: 18px;
+  margin-top: 5px;
+
+  color: var(--primary-color);
+
+  flex-shrink: 0;
+}
+
+.footer-contact span,
+.footer-contact a {
+  color: var(--text-color);
+  line-height: 1.75;
+}
+
+.footer-contact a:hover {
+  color: var(--primary-color);
+  transform: translateX(3px);
+  transition: var(--transition);
+}
+
+.footer-contact h3 {
+  margin-bottom: 22px;
+}
+
+/*====================================================
+BOTTOM
+====================================================*/
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-top: 60px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--text-color);
+  opacity: .85;
+  letter-spacing: .3px;
+}
+
+.footer-bottom strong {
+  color: var(--heading-color);
+}
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-bottom-right span {
+  opacity: .25;
+}
+
+.footer-bottom-right a {
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.footer-bottom-right a:hover {
+  color: var(--primary-color);
+}
+
+/* ==========================================
+   FOOTER COLUMN DIVIDER
+========================================== */
+
+.footer-content>* {
+  position: relative;
+}
+
+.footer-content>*:not(:last-child) {
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.footer-content>*:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+
+  background: linear-gradient(to bottom,
+      rgba(0, 163, 255, 1) 0%,
+      rgba(0, 163, 255, .85) 10%,
+      rgba(0, 163, 255, .55) 30%,
+      rgba(0, 163, 255, .25) 60%,
+      rgba(0, 163, 255, .08) 82%,
+      transparent 100%);
+}
+
+/* ============================================================================================= */
 
 /*====================================================
 SCROLL REVEAL
@@ -1093,7 +1291,6 @@ SCROLL REVEAL
 
 .course-hero {
   padding: 140px 0 80px;
-  background: linear-gradient(135deg, #f8fbff 0%, #eef7fd 100%);
 }
 
 .course-hero-content {
@@ -1226,6 +1423,7 @@ SCROLL REVEAL
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .learning-item:hover,

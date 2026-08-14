@@ -38,10 +38,64 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <!-- ===== LOGO ===== -->
 
-    <!-- Header -->
-    <header>
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logo/web/nitscti-logo.svg" alt="NITS COMPUTER TRAINING INSTITUTE Logo" />
+            </a>
 
+            <!-- ===== NAVIGATION ===== -->
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="active" aria-label="Go to Home section">Home</a></li>
+                    <li><a href="../index.html#about" aria-label="Go to About section">About</a></li>
+                    <li><a href="../index.html#features" aria-label="Go to Features section">Features</a></li>
+                    <li><a href="../index.html#courses" aria-label="Go to Courses section">Courses</a></li>
+                    <li><a href="../index.html#gallery" aria-label="Go to Gallery section">Gallery</a></li>
+                    <li><a href="../index.html#testimonials" aria-label="Go to Testimonials section">Testimonials</a>
+                    </li>
+                    <li><a href="../index.html#faq" aria-label="Go to FAQ section">FAQ</a></li>
+                    <li><a href="../index.html#contact" aria-label="Go to Contact section">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- ===== Dark/Light Mode ===== -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <!-- Sun Icon -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <path d="M12 1v2"></path>
+                    <path d="M12 21v2"></path>
+                    <path d="M4.22 4.22l1.42 1.42"></path>
+                    <path d="M18.36 18.36l1.42 1.42"></path>
+                    <path d="M1 12h2"></path>
+                    <path d="M21 12h2"></path>
+                    <path d="M4.22 19.78l1.42-1.42"></path>
+                    <path d="M18.36 5.64l1.42-1.42"></path>
+                </svg>
+                <!-- Moon Icon -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3"></path>
+                </svg>
+            </button>
+
+            <!-- ===== Menu Toggle ===== -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- ===== CTA ===== -->
+            <a href="../index.html#contact" class="btn btn-primary"
+                aria-label="Enroll now at NITS Computer Training Institute">
+                Enroll Now
+            </a>
+
+            <!-- ===== MOBILE MENU ===== -->
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -71,7 +125,7 @@
                     </div>
 
                     <div class="course-hero-actions">
-                        <a href="#" class="btn btn-primary">
+                        <a href="../index.html#contact" class="btn btn-primary">
                             Enroll Now
                         </a>
 
@@ -552,8 +606,57 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer reveal">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="../assets/images/logo/web/nitscti-logo.svg"
+                            alt="NITS Computer Training Institute Logo" />
+                    </a>
 
+                    <p>
+                        NITS Computer Training Institute provides practical IT education,
+                        freelancing skills and career development for students.
+                    </p>
+                </div>
+
+                <nav class="footer-links" aria-label="Footer Quick Links">
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="../index.html#hero" aria-label="Go to Home section">Home</a></li>
+                        <li><a href="../index.html#about" aria-label="Go to About section">About</a></li>
+                        <li><a href="../index.html#courses" aria-label="Go to Courses section">Courses</a></li>
+                        <li><a href="../index.html#contact" aria-label="Go to Contact section">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-links">
+                    <h3>Courses</h3>
+
+                    <ul>
+                        <li><a href="#" aria-label="Go to Web Development course">Web Development</a></li>
+                        <li><a href="#" aria-label="Go to Graphic Design course">Graphic Design</a></li>
+                        <li><a href="#" aria-label="Go to Office Applications course">Office Applications</a></li>
+                        <li><a href="#" aria-label="Go to Digital Marketing course">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Contact</h3>
+
+                    <ul>
+                        <li>📍 Narayanganj</li>
+                        <li>📞 +8801567-818036</li>
+                        <li>✉️ info@nitscti.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 NITS Computer Training Institute. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Main JavaScript -->
