@@ -240,10 +240,6 @@ section {
   gap: 80px;
 }
 
-.about-image {
-  position: relative;
-}
-
 .about-content {
   display: flex;
   flex-direction: column;
@@ -327,15 +323,23 @@ section {
 .about-image {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
+}
+
+.image-title {
+  margin-top: 20px;
+}
+
+.image-title h3,
+b {
+  display: inline;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 540px;
+  max-width: 600px;
   display: block;
-  margin: auto;
   border-radius: 24px;
   object-fit: cover;
   box-shadow: 0 30px 70px rgba(15, 23, 42, 0.14);
