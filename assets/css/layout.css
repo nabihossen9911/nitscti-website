@@ -31,7 +31,7 @@ SCROLLED HEADER
 .header.scrolled {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   align-items: center;
   gap: 20px;
@@ -81,7 +81,6 @@ SCROLLED HEADER
   align-items: center;
   gap: 40px;
 }
-
 
 /*=========================================
   DARK HEADER

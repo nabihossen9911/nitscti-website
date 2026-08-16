@@ -59,13 +59,43 @@
   --white: #ffffff;
 
   /* Layout */
-  --container-width: 1400px;
+  --container-width: 1320px;
 
   /* Typography */
   --font-family: "Poppins", sans-serif;
 
-  /* Radius */
+  /* Radius Scale */
   --radius: 12px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* Shadow Scale */
+  --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 45px rgba(15, 23, 42, 0.12);
+
+  /* Spacing Scale */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 72px;
+
+  /* Font Weight */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Z-Index */
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-modal: 500;
+  --z-tooltip: 700;
 }
 
 /*=========================================
@@ -96,7 +126,7 @@ body {
   transition:
     background 0.35s ease,
     color 0.35s ease;
-  /* line-height: 1.7; */
+  line-height: 1.6;
 }
 
 /*=========================================
@@ -161,4 +191,17 @@ img {
     color 0.25s ease,
     border-color 0.25s ease,
     box-shadow 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

@@ -242,3 +242,28 @@ if (menuToggle && navbar) {
     });
 
 }
+
+
+
+// const course = document.querySelector('.courses .container');
+// course.addEventListener('mousemove', e => {
+//     const rect = course.getBoundingClientRect();
+//     course.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+//     course.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+
+// });
+
+const pointers = document.querySelectorAll('.mPointer');
+pointers.forEach(pointer => {
+    pointer.addEventListener('mousemove', e => {
+        const rect = pointer.getBoundingClientRect();
+        pointer.style.setProperty(
+            '--mouse-x',
+            `${e.clientX - rect.left}px`
+        );
+        pointer.style.setProperty(
+            '--mouse-y',
+            `${e.clientY - rect.top}px`
+        );
+    });
+});
