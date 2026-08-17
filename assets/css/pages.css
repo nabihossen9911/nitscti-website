@@ -417,19 +417,6 @@ b {
   overflow: hidden;
 }
 
-#about::before {
-  content: "";
-  position: absolute;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: rgba(14, 165, 233, 0.08);
-  filter: blur(120px);
-  top: -120px;
-  left: -120px;
-  z-index: -1;
-}
-
 #about::after {
   content: "";
   position: absolute;
@@ -679,6 +666,7 @@ body.dark-mode #about::after {
   transition: 0.35s ease;
   padding-bottom: 0;
   isolation: isolate;
+  display: flex;
 }
 
 .course-box {
@@ -689,6 +677,9 @@ body.dark-mode #about::after {
   border: 1px solid var(--border-color);
   height: 100%;
   transition: 0.35s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .course-tag {
@@ -719,11 +710,7 @@ body.dark-mode #about::after {
 .course-link {
   display: flex;
   flex-direction: column;
-
-  overflow: hidden;
-  border-radius: 22px;
-
-  height: 100%;
+  flex: 1;
 }
 
 .course-tag::before {
@@ -869,16 +856,36 @@ body.dark-mode #about::after {
 =========================================*/
 
 .course-content {
-  padding: 18px 18px 20px;
+  padding: 0px 10px 8px 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.course-content h3,
+.course-card h3 {
+  font-size: 1.08rem;
+  line-height: 1.5rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: block;
 }
 
 .course-content h3 {
-  margin: 0 0 10px;
-  font-size: 1.35rem;
-  line-height: 1.25;
-  font-weight: 700;
-  color: var(--heading-color);
+  margin: 8px 0 6px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  min-height: auto;
+  height: auto;
 }
 
 .course-content p {
@@ -886,6 +893,10 @@ body.dark-mode #about::after {
   font-size: 0.94rem;
   line-height: 1.65;
   color: var(--text-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*=========================================================
@@ -914,39 +925,6 @@ BUTTON
   padding-top: 18px;
   border-top: 1px solid var(--border-color);
   font-size: 0.94rem;
-}
-
-/*=========================================
-  COURSE PRICE
-=========================================*/
-
-.course-price {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  margin-bottom: 18px;
-}
-
-.current-price {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-.old-price {
-  font-size: 0.95rem;
-  color: var(--gray);
-  text-decoration: line-through;
-}
-
-.discount {
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: #22c55e;
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
 }
 
 /*=========================================
@@ -1698,7 +1676,6 @@ BOTTOM
   padding: 100px 0;
   background: var(--bg-color);
 }
-
 
 .mPointer {
   position: relative;
