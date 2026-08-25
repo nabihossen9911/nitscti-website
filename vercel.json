@@ -1,16 +1,42 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/card/nabihossen",
-      "destination": "https://nitscti-digital-card.vercel.app/card/nabihossen"
+      "destination": "https://nitscti-digital-card.vercel.app/"
     },
     {
       "source": "/card/nabihossen/",
-      "destination": "https://nitscti-digital-card.vercel.app/card/nabihossen/"
+      "destination": "https://nitscti-digital-card.vercel.app/"
     },
     {
-      "source": "/card/nabihossen/:path*",
-      "destination": "https://nitscti-digital-card.vercel.app/card/nabihossen/:path*"
+      "source": "/card/assets/:path*",
+      "destination": "https://nitscti-digital-card.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/card/icons/:path*",
+      "destination": "https://nitscti-digital-card.vercel.app/icons/:path*"
+    },
+    {
+      "source": "/card/images/:path*",
+      "destination": "https://nitscti-digital-card.vercel.app/images/:path*"
+    },
+    {
+      "source": "/card/manifest.webmanifest",
+      "destination": "https://nitscti-digital-card.vercel.app/manifest.webmanifest"
+    },
+    
+    {
+      "source": "/card/nabihossen/images/:path*",
+      "destination": "https://nitscti-digital-card.vercel.app/images/:path*"
+    },
+    {
+      "source": "/card/nabihossen/icons/:path*",
+      "destination": "https://nitscti-digital-card.vercel.app/icons/:path*"
+    },
+    {
+      "source": "/card/nabihossen/manifest.webmanifest",
+      "destination": "https://nitscti-digital-card.vercel.app/manifest.webmanifest"
     }
   ]
 }
