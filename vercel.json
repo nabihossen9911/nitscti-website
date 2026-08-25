@@ -1,8 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/card/:path*",
-      "destination": "https://nitscti-digital-card.vercel.app/:path*"
+      "source": "/card/nabihossen",
+      "destination": "https://nitscti-digital-card.vercel.app/card/nabihossen"
+    },
+    {
+      "source": "/card/nabihossen/",
+      "destination": "https://nitscti-digital-card.vercel.app/card/nabihossen/"
+    },
+    {
+      "source": "/card/nabihossen/:path*",
+      "destination": "https://nitscti-digital-card.vercel.app/card/nabihossen/:path*"
     }
   ]
 }
