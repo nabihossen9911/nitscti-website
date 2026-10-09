@@ -222,6 +222,15 @@ TABLET
         MOBILE - 768px
 *==========================================================================================*/
 @media (max-width: 768px) {
+  .brand-lockup {
+    gap: 6px;
+  }
+
+  .dev-test-badge {
+    padding: 4px 6px;
+    font-size: 0.58rem;
+  }
+
   .logo img {
     height: 35px;
   }
