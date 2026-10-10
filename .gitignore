@@ -1,1 +1,11 @@
 .vercel
+
+# Workspace-local build/dependency output
+**/node_modules/
+**/dist/
+**/.expo/
+**/.env
+**/.env.local
+**/.env.*.local
+!**/.env.example
+*.tsbuildinfo

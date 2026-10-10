@@ -1,0 +1,80 @@
+[
+  {
+    "id": "office-applications",
+    "title": "Microsoft Office",
+    "category": "Office",
+    "summary": {
+      "en": "Word, Excel, PowerPoint, internet and typing.",
+      "bn": "Word, Excel, PowerPoint, internet ও typing-এর ব্যবহারিক দক্ষতা।"
+    },
+    "image": "/assets/images/courses/microsoft-office-course-nits-computer-training-institute.webp",
+    "detailPath": "/office-course.html",
+    "fee": null,
+    "duration": null
+  },
+  {
+    "id": "graphic-design",
+    "title": "Graphic Design",
+    "category": "Design",
+    "summary": {
+      "en": "Photoshop, Illustrator and Canva.",
+      "bn": "Photoshop, Illustrator ও Canva-তে সৃজনশীল ডিজাইন।"
+    },
+    "image": "/assets/images/courses/graphic-design-course-nits-computer-training-institute.webp",
+    "detailPath": null,
+    "fee": null,
+    "duration": null
+  },
+  {
+    "id": "digital-marketing",
+    "title": "Digital Marketing",
+    "category": "Marketing",
+    "summary": {
+      "en": "SEO, Facebook Marketing and Google Ads.",
+      "bn": "SEO, Facebook Marketing ও Google Ads-এর পরিচিতি।"
+    },
+    "image": "/assets/images/courses/digital-marketing-course-nits-computer-training-institute.webp",
+    "detailPath": null,
+    "fee": null,
+    "duration": null
+  },
+  {
+    "id": "video-editing",
+    "title": "Video Editing",
+    "category": "Video & Motion",
+    "summary": {
+      "en": "Premiere Pro, After Effects and CapCut.",
+      "bn": "Premiere Pro, After Effects ও CapCut-এ ভিডিও সম্পাদনা।"
+    },
+    "image": "/assets/images/courses/video-editing-course-nits-computer-training-institute.webp",
+    "detailPath": null,
+    "fee": null,
+    "duration": null
+  },
+  {
+    "id": "web-development",
+    "title": "Web Development",
+    "category": "Technology",
+    "summary": {
+      "en": "The homepage lists HTML, CSS, JavaScript and PHP.",
+      "bn": "Homepage-এ HTML, CSS, JavaScript ও PHP উল্লেখ আছে।"
+    },
+    "image": "/assets/images/courses/web-development-course-nits-computer-training-institute.webp",
+    "detailPath": null,
+    "fee": null,
+    "duration": null
+  },
+  {
+    "id": "motion-graphics",
+    "title": "Motion Graphics",
+    "category": "Video & Motion",
+    "summary": {
+      "en": "After Effects, Premiere Pro and Blender.",
+      "bn": "After Effects, Premiere Pro ও Blender-এ motion graphics।"
+    },
+    "image": "/assets/images/courses/motion-graphics-design-course-nits-computer-training-institute.webp",
+    "detailPath": null,
+    "fee": null,
+    "duration": null
+  }
+]

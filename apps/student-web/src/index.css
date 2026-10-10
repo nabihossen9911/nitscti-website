@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap');
+
+:root{font-family:'Poppins','Noto Sans Bengali',system-ui,sans-serif;color:#231f20;background:#f7f9fb;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;--brand:#1487bc;--brand-strong:#0b648f;--ink:#231f20;--muted:#626b73;--line:#e2e8ed;--surface:#fff;--soft:#eaf5fa;--radius:18px;--shadow:0 14px 44px rgba(22,67,91,.08);font-optical-sizing:auto}
+*{box-sizing:border-box}body{margin:0;min-width:320px;min-height:100vh}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1487bc;outline-offset:3px}::selection{background:#c8eaf8;color:#12465f}

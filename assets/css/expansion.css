@@ -1,0 +1,244 @@
+.expansion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 82px;
+}
+
+.expansion-header .logo img,
+.expansion-footer .logo img {
+  width: min(190px, 38vw);
+  height: auto;
+}
+
+.expansion-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.expansion-nav a {
+  color: var(--heading-color);
+}
+
+.expansion-nav a[aria-current="page"] {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.course-catalog-page {
+  min-height: 68vh;
+}
+
+.course-catalog-page .section-header {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.course-catalog-page .section-header h1 {
+  margin: 16px 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.course-catalog-page .section-header p,
+.expansion-footer p {
+  color: var(--text-color);
+}
+
+.catalog-toolbar {
+  max-width: 620px;
+  margin: 0 auto 12px;
+}
+
+.catalog-search-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.catalog-search {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--surface-color);
+  color: var(--heading-color);
+  font: inherit;
+}
+
+.catalog-search:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.catalog-status {
+  min-height: 28px;
+  margin: 10px auto 16px;
+  max-width: 620px;
+  color: var(--text-color);
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.catalog-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.catalog-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px;
+}
+
+.catalog-card-content h2 {
+  font-size: 1.25rem;
+}
+
+.catalog-card-content p {
+  color: var(--text-color);
+}
+
+.catalog-card-content .course-category {
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.catalog-card-content .course-action {
+  margin-top: auto;
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.expansion-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.expansion-footer > a:last-child {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.office-course-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  align-items: center;
+  gap: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.office-course-hero h1 {
+  margin: 16px 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.office-course-hero p {
+  max-width: 680px;
+  color: var(--text-color);
+}
+
+.office-course-hero > img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.office-course-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.office-course-facts .info-item {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--surface-color);
+}
+
+.office-course-facts .info-item strong {
+  color: var(--heading-color);
+}
+
+@media (max-width: 992px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .expansion-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .expansion-nav {
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  .office-course-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .office-course-hero > img {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .expansion-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .office-course-facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expansion-header .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
